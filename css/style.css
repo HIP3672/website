@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h2{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.5em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.705);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.705);
+    color:white;
+    background-color: rgb(255, 30, 0);
+}
+
+button:hover{
+    background-color: rgb(47, 63, 155);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color:rgb(0, 60, 255)}
+
+header{
+    background-color: rgb(254,245,245);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(0, 102, 255);
+    font-size: 2.23em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: red;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vbh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/comunidad-cubos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+
+#somos-cubo .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Los-Mejores-Metodos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Los-Mejores-Metodos .container{
+    padding: 150px 9px;
+}
+
+#Los-Mejores-Metodos h2{
+    margin-top: 0;
+    font-size: 2.9;
+}
+
+#Los-Mejores-Metodos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/metodo-principiante.jpg");
+   
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/metodo-fridrich.jpg");
+
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/metodo-roux.jpg");
+    
+}
+
+#Beneficios .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#Beneficios li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#Foro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#Foro h2{
+    font-size: 9vw;
+}
+#Foro button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(188, 190, 38);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 6em;
+
+    }
+
+    #somos-cubo .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #somos-cubo .texto{
+        width: 50%;
+        max-width: 770px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+    }
+
+    #somos-cubo h2{
+        margin-top: 0px;
+    }
+
+    #somos-cubo .container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("media/comunidad-cubos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 550px;  
+        width: 570x;
+    }
+
+    #Los-Mejores-Metodos .Metodo{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Los-Mejores-Metodos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Los-Mejores-Metodos h2{
+        font-size: 3.3em;
+    }
+
+    #Los-Mejores-Metodos h3{
+        margin-top: 0;
+    }
+
+    #Los-Mejores-Metodos .carta{
+        padding: 14px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }   
+    #Beneficios{
+        background-image: url("media/somos-cubo.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #Beneficios .container{
+        text-align: initial;
+    }
+
+    #Beneficios ul{
+        margin-left: 100px;
+    }
+
+    #Foro h2{
+        font-size: 5em;
+    }
+    #Foro button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px){
+    #Beneficios{
+        background-position-x: calc(54vw - 700px);
+    }      
+}     
